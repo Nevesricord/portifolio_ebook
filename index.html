@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kines Ebooks - Portfólio</title>
+    <LINK REL="SHORTCUT ICON" HREF="ebook.png" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            display: block;
+        }
+        
+        .logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #0066cc;
+        }
+
+        section {
+            padding: 40px 0; 
+        }
+        
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .ebook-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 180px; 
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ebook-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .ebook-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .ebook-card h3 {
+            font-size: 1.1rem;
+            color: #222;
+            margin: 10px 0 5px 0;
+        }
+        
+        .ebook-card p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #0066cc;
+            margin: 0;
+        }
+        
+        .texto-centralizado {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .botao-contato {
+            display: inline-block;
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .botao-contato:hover {
+            background-color: #0052a3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <a href="#inicio" class="logo">
+                <img src="logo.jpg" alt="Logo Kines" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h2>Nossos Ebooks</h2>
+                <div class="portfolio-grid">
+
+                    <div class="ebook-card">
+                        <img src="oi.jpg" alt="Capa do Ebook 1">
+                        <h3>O Guia do Sucesso</h3>
+                        <p>R$ 29,90</p>
+                    </div>
+
+                    <div class="ebook-card">
+                        <img src="coz.jpg" alt="Capa do Ebook 2">
+                        <h3>Cozinha Rápida</h3>
+                        <p>R$ 19,90</p>
+                    </div>
+
+                    <div class="ebook-card">
+                        <img src="liv.jpg" alt="Capa do Ebook 3">
+                        <h3>Finanças Pessoais</h3>
+                        <p>R$ 34,90</p>
+                    </div>
+                    
+                    <div class="ebook-card">
+                        <img src="livv.jpg" alt="Capa do Ebook 4">
+                        <h3>A Arte da Escrita</h3>
+                        <p>R$ 22,00</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" style="background-color: #ffffff;">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <div class="texto-centralizado">
+                    <p>
+                        Bem-vindo à Kines, sua nova fonte de conhecimento digital. 
+                        Nascemos da paixão pela leitura e pela crença de que
+                        boas ideias devem ser acessíveis a todos.
+                    </p>
+                    <p>
+                        Nossa missão é selecionar e oferecer ebooks de alta qualidade 
+                        que inspirem, eduquem e transformem a vida dos nossos leitores.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <div class="texto-centralizado">
+                    <p>
+                        Tem alguma dúvida, sugestão ou proposta de parceria?
+                        Adoraríamos ouvir você!
+                    </p>
+                    <p>
+                        Clique no botão abaixo para nos enviar um e-mail:
+                    </p>
+                    <a href="mailto:contato@kines.com" class="botao-contato">
+                        contato@kines.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kines Ebooks. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>
